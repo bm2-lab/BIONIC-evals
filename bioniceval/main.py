@@ -1,7 +1,7 @@
 import typer
 from pathlib import Path
 from typing import Optional, List
-from .utils.resolvers import resolve_config_path, resolve_tasks
+from resolvers import resolve_config_path, resolve_tasks
 from .utils.process_config import process_config
 from .utils.file_utils import import_datasets
 from .evals.coannotation import coannotation_eval
