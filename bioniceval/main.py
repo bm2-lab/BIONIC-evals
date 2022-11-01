@@ -2,11 +2,11 @@ import typer
 from pathlib import Path
 from typing import Optional, List
 from resolvers import resolve_config_path, resolve_tasks
-from .utils.process_config import process_config
-from .utils.file_utils import import_datasets
-from .evals.coannotation import coannotation_eval
-from .evals.module_detection import module_detection_eval
-from .evals.function_prediction import function_prediction_eval
+from process_config import process_config
+from file_utils import import_datasets
+from coannotation import coannotation_eval
+from module_detection import module_detection_eval
+from function_prediction import function_prediction_eval
 
 
 app = typer.Typer()
